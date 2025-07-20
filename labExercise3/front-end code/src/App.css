@@ -1,0 +1,164 @@
+/* Calculator Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.calculator-display {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.display-value {
+  color: #333333;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-height: 1em;
+  font-family: 'Courier New', monospace;
+}
+
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 8px;
+}
+
+.input-keys {
+  display: grid;
+  gap: 8px;
+}
+
+.function-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.digit-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.digit-keys .key-0 {
+  grid-column: span 2;
+}
+
+.operator-keys {
+  display: grid;
+  gap: 8px;
+}
+
+/* Button Styles */
+button {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 400;
+  height: 48px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  outline: none;
+  background: #ffffff;
+  color: #333333;
+}
+
+button:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+
+button:active {
+  background: #f0f0f0;
+}
+
+/* Number buttons */
+.digit-keys button {
+  background: #ffffff;
+  color: #333333;
+}
+
+.digit-keys button:hover {
+  background: #f8f8f8;
+}
+
+/* Function buttons (AC, CE, ±) */
+.function-keys button {
+  background: #f5f5f5;
+  color: #666666;
+  font-weight: 500;
+}
+
+.function-keys button:hover {
+  background: #eeeeee;
+}
+
+/* Operator buttons */
+.operator-keys button {
+  background: #e8e8e8;
+  color: #333333;
+  font-weight: 500;
+}
+
+.operator-keys button:hover {
+  background: #dddddd;
+}
+
+/* Equals button */
+.key-equals {
+  background: #333333 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.key-equals:hover {
+  background: #555555 !important;
+}
+
+/* Decimal button */
+.key-decimal {
+  font-size: 1.2em !important;
+  line-height: 1;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .calculator {
+    width: 260px;
+    padding: 12px;
+  }
+  
+  .display-value {
+    font-size: 1.8em;
+  }
+  
+  button {
+    height: 40px;
+    font-size: 0.9em;
+  }
+}
