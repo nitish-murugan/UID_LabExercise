@@ -1,0 +1,295 @@
+/* UserProfileDemo.module.css */
+.demoContainer {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  min-height: calc(100vh - 76px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.demoHeader {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.demoTitle {
+  margin: 0 0 12px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.demoDescription {
+  margin: 0;
+  font-size: 16px;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.backButton {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+.demoControls {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.controlGroup h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.demoButton {
+  background: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.demoButton:hover {
+  background: #d5dbdb;
+  transform: translateY(-1px);
+}
+
+.activeButton {
+  background: #3498db;
+  color: white;
+  border: 1px solid #2980b9;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeButton:hover {
+  background: #2980b9;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3498db;
+}
+
+.propsDisplay {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.propsDisplay h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.propsCode {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  overflow-x: auto;
+}
+
+.propsCode pre {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.componentDemo {
+  margin-bottom: 24px;
+}
+
+.propsDocumentation {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.propsDocumentation h2 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.propsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.propRow {
+  display: grid;
+  grid-template-columns: 150px 100px 100px 1fr;
+  gap: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.propName {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.propType {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  color: #e74c3c;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.propRequired {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #7f8c8d;
+}
+
+.propDescription {
+  font-size: 14px;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .demoControls {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .propRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .propName,
+  .propType,
+  .propRequired {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .demoContainer {
+    padding: 16px;
+  }
+  
+  .demoHeader {
+    padding: 24px 20px;
+  }
+  
+  .backButton {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 16px;
+  }
+  
+  .demoTitle {
+    font-size: 24px;
+  }
+  
+  .demoControls {
+    padding: 20px;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+  
+  .demoButton,
+  .activeButton {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .propsDisplay,
+  .propsDocumentation {
+    padding: 20px;
+  }
+  
+  .propsCode {
+    padding: 12px;
+  }
+  
+  .propsCode pre {
+    font-size: 12px;
+  }
+}
