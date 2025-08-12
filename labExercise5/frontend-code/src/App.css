@@ -1,0 +1,151 @@
+#root {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-left: 400px;
+}
+
+/* Counter App Styles */
+.counter-app {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333333;
+  text-align: center;
+}
+
+.counter-app h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 0;
+}
+
+/* Input Styles */
+.counter-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.counter-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.counter-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.counter-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #374151;
+}
+
+.increment-btn {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.increment-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.decrement-btn {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.decrement-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.counter-btn:active {
+  background-color: #e5e7eb;
+  transform: translateY(1px);
+}
+
+.counter-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Result Display */
+.result-display {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.result-display h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .counter-app {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .counter-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .counter-btn:last-child {
+    margin-bottom: 0;
+  }
+  
+  .result-display h2 {
+    font-size: 1.25rem;
+  }
+  
+  .counter-app h1 {
+    font-size: 1.5rem;
+  }
+}
